@@ -115,9 +115,7 @@ def load_model():
 
 model = load_model()
 
-# Load class labels from Teachable Machine
-with open("labels.txt", "r") as f:
-    class_names = [line.strip() for line in f]
+
 
 
 # Header
