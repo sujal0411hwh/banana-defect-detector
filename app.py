@@ -97,16 +97,17 @@ import numpy as np
 # Page config
 st.set_page_config(page_title="InspectorsAlly – Banana QA", layout="centered")
 
-# Load the model once
 @st.cache_resource
+
 def load_model():
-    return tf.keras.models.load_model("keras_model.h5", compile=False)
+    return tf.keras.models.load_model("model/", compile=False)
 
 model = load_model()
 
 # Load class labels from Teachable Machine
 with open("labels.txt", "r") as f:
     class_names = [line.strip() for line in f]
+
 
 # Header
 st.markdown("""
