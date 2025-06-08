@@ -86,6 +86,9 @@
 
 # st.markdown("---")
 # st.caption("Built with ❤️ by Sujal • Powered by TensorFlow + Streamlit")
+
+
+
 import streamlit as st
 import tensorflow as tf
 from PIL import Image
@@ -97,7 +100,7 @@ st.set_page_config(page_title="InspectorsAlly – Banana QA", layout="centered")
 # Load the model once
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("keras_Model.h5", compile=False)
+    return tf.keras.models.load_model("keras_model.h5", compile=False)
 
 model = load_model()
 
