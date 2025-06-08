@@ -94,6 +94,24 @@ import tensorflow as tf
 from PIL import Image
 import numpy as np
 
+
+
+
+st.set_page_config(page_title="InspectorsAlly – Banana QA", layout="centered")
+
+banner = Image.open("bannanabanner.png")
+st.image(banner, use_column_width=True)
+
+st.title("InspectorsAlly – Banana QA")
+st.write("An AI-powered tool for visual banana defect detection.")
+
+
+
+
+
+
+
+
 # Page config
 st.set_page_config(page_title="InspectorsAlly – Banana QA", layout="centered")
 
